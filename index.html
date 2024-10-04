@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Personal Finance Manager</h1>
+        <p>Керуйте своїми доходами та витратами легко</p>
+    </header>
+    
+    <main>
+        <section id="income">
+            <h2>Доходи</h2>
+            <input type="number" id="income-amount" placeholder="Введіть суму доходу">
+            <button onclick="addIncome()">Додати дохід</button>
+            <ul id="income-list"></ul>
+        </section>
+
+        <section id="expenses">
+            <h2>Витрати</h2>
+            <input type="text" id="expense-description" placeholder="Опис витрати">
+            <input type="number" id="expense-amount" placeholder="Введіть суму витрати">
+            <button onclick="addExpense()">Додати витрату</button>
+            <ul id="expense-list"></ul>
+        </section>
+
+        <section id="balance">
+            <h2>Баланс</h2>
+            <p id="total-income">Загальні доходи: 0</p>
+            <p id="total-expenses">Загальні витрати: 0</p>
+            <p id="net-balance">Чистий баланс: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Personal Finance Manager. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
