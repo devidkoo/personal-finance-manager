@@ -13,7 +13,7 @@
         <p>Керуйте своїми доходами та витратами легко</p>
     </header>
     
-    <main>
+    <main id="main-content" style="display: none;">
         <section id="income">
             <h2>Доходи</h2>
             <input type="number" id="income-amount" placeholder="Введіть суму доходу">
@@ -35,10 +35,35 @@
             <p id="total-expenses">Загальні витрати: 0</p>
             <p id="net-balance">Чистий баланс: 0</p>
         </section>
+
+        <section id="analysis">
+            <h2>Аналіз Витрат</h2>
+            <div id="chart-container">
+                <canvas id="expense-chart"></canvas>
+            </div>
+        </section>
+
+        <section id="premium">
+            <h2>Преміум Функції</h2>
+            <p>Отримайте доступ до більш детальної аналітики та порад від експертів, оформивши преміум підписку.</p>
+            <button onclick="subscribePremium()">Оформити підписку</button>
+        </section>
     </main>
+
+    <section id="user-auth">
+        <h2>Вхід / Реєстрація</h2>
+        <div id="auth-forms">
+            <input type="text" id="username" placeholder="Логін">
+            <input type="password" id="password" placeholder="Пароль">
+            <button onclick="registerUser()">Зареєструватися</button>
+            <button onclick="loginUser()">Увійти</button>
+        </div>
+    </section>
 
     <footer>
         <p>© 2024 Personal Finance Manager. Всі права захищені.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
